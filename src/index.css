@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wifisignals{
+  animation: wifi 1s infinite;
+}
+.signal1{
+  animation-delay: 0s;
+}
+.signal2{
+  animation-delay: 0.5s;
+}
+.signal3{
+  animation-delay: 4s;
+}
+@keyframes wifi {
+  0%,100%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
+.rightbg {
+  animation: rightbg 30s linear infinite;
+}
+@keyframes rightbg {
+  from {
+    transform: rotate(360deg);
+  }
+}
+.bgMobile1 {
+  animation: rotate1 10s linear infinite;
+}
+@keyframes rotate1 {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.bgMobile2 {
+  animation: rotate2 10s linear infinite;
+}
+@keyframes rotate2 {
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+.mobileWatchAnimation {
+  animation: right 17s ease-out forwards infinite;
+}
+@keyframes right {
+  from {
+    transform: translateX(500%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
